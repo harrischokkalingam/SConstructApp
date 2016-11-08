@@ -1,0 +1,29 @@
+<div class='page-header'>
+	<h3>Worker details for - <strong><%= @user.name %></strong>&nbsp;&nbsp;<%= link_to 'Edit', edit_worker_path(@user), :class => 'btn btn-default' %>&nbsp;<%= link_to 'Delete', worker_path(@user), :'data-method' => 'delete', :class => 'btn btn-danger' %></h3>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<p class='bg-primary' style='padding: 5px;'><%= @user.email %></p>
+		<p class='bg-info' style='padding: 5px;'><%= @user.role || 'No role specified' %></p>
+		<p class='bg-success' style='padding: 5px;'><%= @user.expertise_level || 'No expertise level specified' %></p>
+	</div>
+</div>
+<div class='well well-lg'>
+	<div class='page-header'>
+		<h4>Projects assigned to - <%= @user.projects.size %></h4>
+	</div>
+	<table class='table'>
+		<thead>
+			<th>Name</th>
+			<th>Description</th>
+		</thead>
+		<tbody>
+			<% @user.projects.each do |project| %>
+				<tr>
+					<td><%= link_to project.name, project_path(project) %></td>
+					<td><%= project.description %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

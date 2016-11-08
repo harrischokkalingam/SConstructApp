@@ -1,0 +1,1646 @@
+
+
+Started GET "/" for ::1 at 2016-11-05 09:16:43 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (27.5ms)
+Completed 500 Internal Server Error in 2232ms
+
+ActionView::Template::Error (couldn't find file 'twitter-bootstrap-static/fontawesome' with type 'text/css'
+Checked in these paths: 
+  D:/Rails/SConstructApp/SConstructApp/app/assets/images
+  D:/Rails/SConstructApp/SConstructApp/app/assets/javascripts
+  D:/Rails/SConstructApp/SConstructApp/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rails-jquery-autocomplete-1.0.3/lib/assets/javascripts
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/bundler/gems/twitter-bootstrap-rails-d3776ddd0b89/app/assets/fonts
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/bundler/gems/twitter-bootstrap-rails-d3776ddd0b89/app/assets/javascripts
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/bundler/gems/twitter-bootstrap-rails-d3776ddd0b89/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/bundler/gems/twitter-bootstrap-rails-d3776ddd0b89/vendor/assets/stylesheets
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/jquery-ui-rails-5.0.5/app/assets/images
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/jquery-ui-rails-5.0.5/app/assets/javascripts
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/jquery-ui-rails-5.0.5/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+    1: <html>
+    2:   <head>
+    3:     <title>RubyInterviewApp</title>
+    4:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    5:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    6:     <%= csrf_meta_tags %>
+    7:     <%= render 'layouts/shim' %>
+  app/assets/stylesheets/bootstrap_and_overrides.css:6
+  app/views/layouts/application.html.erb:4:in `_app_views_layouts_application_html_erb__132091802_48264468'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (271.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (320.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (574.3ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2016-11-05 09:16:51 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (109.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (348.1ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (89.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (216.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-05 09:17:31 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5586ms (Views: 5585.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-2d6dfccae4fba2fe27d00372b974d4540d75a00cea6ceaa0a6aa33852b9d3ac3.css?body=1" for ::1 at 2016-11-05 09:17:37 -0400
+
+
+Started GET "/assets/jquery-ui/core.self-23329dbe1961b938278306c019037fe36ff6ccb28193f1038e52ccbf52858163.css?body=1" for ::1 at 2016-11-05 09:17:37 -0400
+
+
+Started GET "/assets/jquery-ui/theme.self-df1da30301997b52795cb0213bccd335f2897b65f84d1d7d7c63c04f048d902f.css?body=1" for ::1 at 2016-11-05 09:17:37 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.self-88243ff8ad84acfb1f761c5d9d83d302f8fd8816abbc3b1b8ac1afe64e6324dc.css?body=1" for ::1 at 2016-11-05 09:17:37 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for ::1 at 2016-11-05 09:17:37 -0400
+
+
+Started GET "/assets/jquery-ui/menu.self-5277268fc75b8d6e851ccb5ca12e162c7440315d70974f34db800bc70330f135.css?body=1" for ::1 at 2016-11-05 09:17:37 -0400
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-11-05 09:17:37 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-11-05 09:17:37 -0400
+
+
+Started GET "/assets/application.self-860170c7ab1ca088027e93d68592059edd583aacf6fd47eea1c1c5332b5a9db9.css?body=1" for ::1 at 2016-11-05 09:17:37 -0400
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for ::1 at 2016-11-05 09:17:37 -0400
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-3befc48aba87cead090cfd014562b2771a662ac6d2c8197b24c08b2d9f3d9f2d.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/jquery-ui/menu.self-7abc1c9401509a7e4fc609b1e461be6fd17e8116e8fda19cc59d05ba79aefb68.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/autocomplete-rails.self-7b9f3d470095312074f7dba7e53e16482b6ac8c4c5fe8dd368f321fd8324245c.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-11-05 09:17:38 -0400
+
+
+Started GET "/assets/projects.self-c348650e05d54be56463acf225fdc6cc388d56e36bb8208a3c634b7379a43e34.js?body=1" for ::1 at 2016-11-05 09:17:39 -0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-11-05 09:17:39 -0400
+
+
+Started GET "/assets/application.self-3c6b003359d7b0079c7f31abd75966a993e67c4dbcfe9d73d8fa97d435db4b34.js?body=1" for ::1 at 2016-11-05 09:17:39 -0400
+
+
+Started GET "/projects" for ::1 at 2016-11-05 09:17:43 -0400
+Processing by ProjectsController#index as HTML
+  [1m[35m (21.2ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mProject Load (0.5ms)[0m  SELECT  "projects".* FROM "projects"  ORDER BY "projects"."name" ASC LIMIT 30 OFFSET 0
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 1]]
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 2]]
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 3]]
+  Rendered projects/index.html.erb within layouts/application (573.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1344ms (Views: 1245.5ms | ActiveRecord: 27.7ms)
+
+
+Started GET "/projects/new" for ::1 at 2016-11-05 09:17:47 -0400
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (62.1ms)
+  Rendered projects/new.html.erb within layouts/application (110.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 581ms (Views: 579.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/projects" for ::1 at 2016-11-05 09:17:53 -0400
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zcqcs5D0SI/HcFDYFEcg5m8aPRjvOOJ3r9iHWzKMR8z2Ct1b4EaVqwnSM+4LU19HrdHv8zsx3epcXHW1PKlIWQ==", "project"=>{"name"=>"Test", "description"=>""}, "commit"=>"Create Project"}
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test"], ["description", ""], ["created_at", "2016-11-05 13:17:53.096395"], ["updated_at", "2016-11-05 13:17:53.096395"]]
+  [1m[36m (215.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/projects
+Completed 302 Found in 239ms (ActiveRecord: 217.6ms)
+
+
+Started GET "/projects" for ::1 at 2016-11-05 09:17:53 -0400
+Processing by ProjectsController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mCACHE (0.5ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mProject Load (1.0ms)[0m  SELECT  "projects".* FROM "projects"  ORDER BY "projects"."name" ASC LIMIT 30 OFFSET 0
+  [1m[36mMaterial Load (0.5ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 1]]
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 2]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 2]]
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 3]]
+  [1m[35mUser Load (4.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 3]]
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 6]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 6]]
+  Rendered projects/index.html.erb within layouts/application (89.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 604ms (Views: 590.0ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/projects" for ::1 at 2016-11-05 09:20:35 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (319.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (5.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (308.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (620.1ms)
+  [1m[36m (174.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (106.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20151009165250)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (10.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "role" varchar, "expertise_level" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151009165250"]]
+  [1m[35m (115.0ms)[0m  commit transaction
+Migrating to CreateProjects (20151012152538)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151012152538"]]
+  [1m[35m (102.2ms)[0m  commit transaction
+Migrating to CreateMaterials (20161103074556)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "materials" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "quantity" integer, "unit" varchar, "dimensions" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161103074556"]]
+  [1m[35m (109.2ms)[0m  commit transaction
+Migrating to CreateProjectMaterials (20161103075532)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "project_materials" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "material_id" integer, "project_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161103075532"]]
+  [1m[35m (102.9ms)[0m  commit transaction
+Migrating to CreateProjectEmployees (20161103075546)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  CREATE TABLE "project_employees" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "project_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161103075546"]]
+  [1m[35m (112.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT 1  [["name", "Marcus Stavola"], ["email", "m.stavola@superior_construction.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Marcus Stavola"], ["email", "m.stavola@superior_construction.com"], ["created_at", "2016-11-05 13:23:10.698931"], ["updated_at", "2016-11-05 13:23:10.698931"]]
+  [1m[36m (129.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT 1  [["name", "T. J. McFadden"], ["email", "t.j.McFadden@superior_construction.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "T. J. McFadden"], ["email", "t.j.McFadden@superior_construction.com"], ["created_at", "2016-11-05 13:23:10.836964"], ["updated_at", "2016-11-05 13:23:10.836964"]]
+  [1m[36m (105.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT 1  [["name", "test"], ["email", "test@test.com"]]
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "test"], ["email", "test@test.com"], ["created_at", "2016-11-05 13:23:10.950187"], ["updated_at", "2016-11-05 13:23:10.950187"]]
+  [1m[36m (110.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT 1  [["name", "Phoenix Dabrid"], ["email", "firebird@superior_construction.com"]]
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Phoenix Dabrid"], ["email", "firebird@superior_construction.com"], ["created_at", "2016-11-05 13:23:11.068149"], ["updated_at", "2016-11-05 13:23:11.068149"]]
+  [1m[36m (129.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT 1  [["name", "Jerry Bombard"], ["email", "jerry.bombard@superior_construction.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Jerry Bombard"], ["email", "jerry.bombard@superior_construction.com"], ["created_at", "2016-11-05 13:23:11.204705"], ["updated_at", "2016-11-05 13:23:11.204705"]]
+  [1m[36m (138.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT 1  [["name", "Josh Brown"], ["email", "jb@superior_construction.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Josh Brown"], ["email", "jb@superior_construction.com"], ["created_at", "2016-11-05 13:23:11.351302"], ["updated_at", "2016-11-05 13:23:11.351302"]]
+  [1m[36m (107.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT 1  [["name", "Test"], ["email", "test@test.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test"], ["email", "test@test.com"], ["created_at", "2016-11-05 13:23:11.465366"], ["updated_at", "2016-11-05 13:23:11.465366"]]
+  [1m[36m (137.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT 1  [["name", "Marcus Stavola"], ["email", "M.Stavola@superior_construction.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Marcus Stavola"], ["email", "M.Stavola@superior_construction.com"], ["created_at", "2016-11-05 13:23:11.610035"], ["updated_at", "2016-11-05 13:23:11.610035"]]
+  [1m[36m (125.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT 1  [["name", "Aaron Pharel"], ["email", "aaPharel@superior_construction.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Aaron Pharel"], ["email", "aaPharel@superior_construction.com"], ["created_at", "2016-11-05 13:23:11.742624"], ["updated_at", "2016-11-05 13:23:11.742624"]]
+  [1m[36m (100.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT 1  [["name", "Steve Ferriola"], ["email", "stevey@superior_construction.com"]]
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Steve Ferriola"], ["email", "stevey@superior_construction.com"], ["created_at", "2016-11-05 13:23:11.848420"], ["updated_at", "2016-11-05 13:23:11.848420"]]
+  [1m[36m (102.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT 1  [["name", "Woofy Wooferson"], ["email", "woofy.wooferson@superior_construction.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Woofy Wooferson"], ["email", "woofy.wooferson@superior_construction.com"], ["created_at", "2016-11-05 13:23:11.956216"], ["updated_at", "2016-11-05 13:23:11.956216"]]
+  [1m[36m (97.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT 1  [["name", "Don O Van"], ["email", "Don.O.Van@superior_construction.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Don O Van"], ["email", "Don.O.Van@superior_construction.com"], ["created_at", "2016-11-05 13:23:12.059174"], ["updated_at", "2016-11-05 13:23:12.059174"]]
+  [1m[36m (99.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT 1  [["name", "Fred Black"], ["email", "freddy@superior_construction.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Fred Black"], ["email", "freddy@superior_construction.com"], ["created_at", "2016-11-05 13:23:12.164132"], ["updated_at", "2016-11-05 13:23:12.164132"]]
+  [1m[36m (94.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT 1  [["name", "Jill McDuff"], ["email", "jill.mcDuff@superior_construction.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Jill McDuff"], ["email", "jill.mcDuff@superior_construction.com"], ["created_at", "2016-11-05 13:23:12.263132"], ["updated_at", "2016-11-05 13:23:12.263132"]]
+  [1m[36m (105.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT 1  [["name", "Jill Henry"], ["email", "jill_number_2@superior_construction.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Jill Henry"], ["email", "jill_number_2@superior_construction.com"], ["created_at", "2016-11-05 13:23:12.373147"], ["updated_at", "2016-11-05 13:23:12.373147"]]
+  [1m[36m (98.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? LIMIT 1  [["name", "Janine Hill"], ["email", "j.hill@superior_construction.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Janine Hill"], ["email", "j.hill@superior_construction.com"], ["created_at", "2016-11-05 13:23:12.476764"], ["updated_at", "2016-11-05 13:23:12.476764"]]
+  [1m[36m (111.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."name" = ? AND "projects"."description" = ? LIMIT 1  [["name", "Donna's Patio"], ["description", "Donna is requesting a new patio"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Donna's Patio"], ["description", "Donna is requesting a new patio"], ["created_at", "2016-11-05 13:23:12.606812"], ["updated_at", "2016-11-05 13:23:12.606812"]]
+  [1m[36m (99.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."name" = ? AND "projects"."description" = ? LIMIT 1  [["name", "Jake's House"], ["description", "A ranch style house with a 2 door garage"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Jake's House"], ["description", "A ranch style house with a 2 door garage"], ["created_at", "2016-11-05 13:23:12.711835"], ["updated_at", "2016-11-05 13:23:12.711835"]]
+  [1m[36m (113.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."name" = ? AND "projects"."description" = ? LIMIT 1  [["name", "Phils Moving Van"], ["description", "Phil needs a custom van to move his stuff back to Ohio"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Phils Moving Van"], ["description", "Phil needs a custom van to move his stuff back to Ohio"], ["created_at", "2016-11-05 13:23:12.829858"], ["updated_at", "2016-11-05 13:23:12.829858"]]
+  [1m[36m (144.0ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users"."id", "users"."email" FROM "users" GROUP BY email HAVING count(*) > 1
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 7]]
+  [1m[35m (201.8ms)[0m  commit transaction
+Clean duplicate users task has been completed
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["name", "Marcus Stavola"]]
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["name", "Donna's Patio"]]
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "project_employees" ("project_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["project_id", 1], ["user_id", 1], ["created_at", "2016-11-05 13:26:10.769817"], ["updated_at", "2016-11-05 13:26:10.769817"]]
+User - 1 / Marcus Stavola / m.stavola@superior_construction.com has been added to project Donna's Patio
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["name", "T. J. McFadden"]]
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1  [["name", "Donna's Patio"]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "project_employees" ("project_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["project_id", 1], ["user_id", 2], ["created_at", "2016-11-05 13:26:10.783326"], ["updated_at", "2016-11-05 13:26:10.783326"]]
+User - 2 / T. J. McFadden / t.j.McFadden@superior_construction.com has been added to project Donna's Patio
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["name", "Phoenix Dabrid"]]
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["name", "Donna Patio"]]
+Project not found in DB from row -> Phoenix Dabrid,Donna Patio
+
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["name", "Jerry Bombard"]]
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["name", "Jake's House"]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "project_employees" ("project_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["project_id", 2], ["user_id", 5], ["created_at", "2016-11-05 13:26:10.795329"], ["updated_at", "2016-11-05 13:26:10.795329"]]
+User - 5 / Jerry Bombard / jerry.bombard@superior_construction.com has been added to project Jake's House
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["name", "Josh Brown"]]
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1  [["name", "Jake's House"]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "project_employees" ("project_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["project_id", 2], ["user_id", 6], ["created_at", "2016-11-05 13:26:10.810328"], ["updated_at", "2016-11-05 13:26:10.810328"]]
+User - 6 / Josh Brown / jb@superior_construction.com has been added to project Jake's House
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["name", "Marcus Stavola"]]
+  [1m[36mProject Load (1.0ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["name", "Jake's House"]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "project_employees" ("project_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["project_id", 2], ["user_id", 1], ["created_at", "2016-11-05 13:26:10.824330"], ["updated_at", "2016-11-05 13:26:10.824330"]]
+User - 1 / Marcus Stavola / m.stavola@superior_construction.com has been added to project Jake's House
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["name", "Marcus Stavola"]]
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1  [["name", "Phils Moving Van"]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "project_employees" ("project_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["project_id", 3], ["user_id", 1], ["created_at", "2016-11-05 13:26:10.844331"], ["updated_at", "2016-11-05 13:26:10.844331"]]
+User - 1 / Marcus Stavola / m.stavola@superior_construction.com has been added to project Phils Moving Van
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["name", "Aaron Pharel"]]
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["name", "Phils Moving Van"]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "project_employees" ("project_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["project_id", 3], ["user_id", 9], ["created_at", "2016-11-05 13:26:10.854331"], ["updated_at", "2016-11-05 13:26:10.854331"]]
+User - 9 / Aaron Pharel / aaPharel@superior_construction.com has been added to project Phils Moving Van
+  [1m[36mUser Load (5.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["name", "Woofy Wooferson"]]
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1  [["name", "Phils Moving Van"]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "project_employees" ("project_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["project_id", 3], ["user_id", 11], ["created_at", "2016-11-05 13:26:10.881341"], ["updated_at", "2016-11-05 13:26:10.881341"]]
+User - 11 / Woofy Wooferson / woofy.wooferson@superior_construction.com has been added to project Phils Moving Van
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["name", "Woofy Wooferson"]]
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["name", "Jake's House"]]
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "project_employees" ("project_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["project_id", 2], ["user_id", 11], ["created_at", "2016-11-05 13:26:10.915844"], ["updated_at", "2016-11-05 13:26:10.915844"]]
+User - 11 / Woofy Wooferson / woofy.wooferson@superior_construction.com has been added to project Jake's House
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["name", "Don O Van"]]
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1  [["name", "Phils Moving Van"]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "project_employees" ("project_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["project_id", 3], ["user_id", 12], ["created_at", "2016-11-05 13:26:10.925846"], ["updated_at", "2016-11-05 13:26:10.925846"]]
+User - 12 / Don O Van / Don.O.Van@superior_construction.com has been added to project Phils Moving Van
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["name", "Fred Black"]]
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["name", "Donna Patio"]]
+Project not found in DB from row -> Fred Black,Donna Patio
+
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["name", "Jill McDuff"]]
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["name", "Jake's House"]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "project_employees" ("project_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["project_id", 2], ["user_id", 14], ["created_at", "2016-11-05 13:26:10.962351"], ["updated_at", "2016-11-05 13:26:10.962351"]]
+User - 14 / Jill McDuff / jill.mcDuff@superior_construction.com has been added to project Jake's House
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["name", "Jill Henry"]]
+  [1m[35mProject Load (0.5ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1  [["name", "Jake's House"]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "project_employees" ("project_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["project_id", 2], ["user_id", 15], ["created_at", "2016-11-05 13:26:11.019357"], ["updated_at", "2016-11-05 13:26:11.019357"]]
+User - 15 / Jill Henry / jill_number_2@superior_construction.com has been added to project Jake's House
+  [1m[35m (351.3ms)[0m  commit transaction
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT  "materials".* FROM "materials" WHERE "materials"."name" = ?  ORDER BY "materials"."id" ASC LIMIT 1[0m  [["name", "Brick"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "materials" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Brick"], ["created_at", "2016-11-05 13:26:11.411655"], ["updated_at", "2016-11-05 13:26:11.411655"]]
+  [1m[35m (181.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "materials" SET "quantity" = ?, "unit" = ?, "updated_at" = ? WHERE "materials"."id" = ?  [["quantity", 10], ["unit", " blocks"], ["updated_at", "2016-11-05 13:26:11.596842"], ["id", 1]]
+  [1m[36m (113.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mProject Load (0.5ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1  [["name", "Donna's Patio"]]
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["project_id", 1], ["material_id", 1], ["created_at", "2016-11-05 13:26:11.749367"], ["updated_at", "2016-11-05 13:26:11.749367"]]
+  [1m[36m (103.4ms)[0m  [1mcommit transaction[0m
+Material - 1 / Brick has been added to project Donna's Patio
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mMaterial Load (0.0ms)[0m  SELECT  "materials".* FROM "materials" WHERE "materials"."name" = ?  ORDER BY "materials"."id" ASC LIMIT 1  [["name", "2x4"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "materials" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "2x4"], ["created_at", "2016-11-05 13:26:11.862811"], ["updated_at", "2016-11-05 13:26:11.862811"]]
+  [1m[36m (94.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mUPDATE "materials" SET "quantity" = ?, "updated_at" = ? WHERE "materials"."id" = ?[0m  [["quantity", 10], ["updated_at", "2016-11-05 13:26:11.964706"], ["id", 2]]
+  [1m[35m (98.2ms)[0m  commit transaction
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["name", "Donna's Patio"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["project_id", 1], ["material_id", 2], ["created_at", "2016-11-05 13:26:12.069877"], ["updated_at", "2016-11-05 13:26:12.069877"]]
+  [1m[35m (97.4ms)[0m  commit transaction
+Material - 2 / 2x4 has been added to project Donna's Patio
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT  "materials".* FROM "materials" WHERE "materials"."name" = ?  ORDER BY "materials"."id" ASC LIMIT 1[0m  [["name", "4x4"]]
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "materials" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "4x4"], ["created_at", "2016-11-05 13:26:12.176246"], ["updated_at", "2016-11-05 13:26:12.176246"]]
+  [1m[35m (116.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "materials" SET "quantity" = ?, "updated_at" = ? WHERE "materials"."id" = ?  [["quantity", 4], ["updated_at", "2016-11-05 13:26:12.299899"], ["id", 3]]
+  [1m[36m (119.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mProject Load (0.5ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1  [["name", "Donna's Patio"]]
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.0ms)[0m  INSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["project_id", 1], ["material_id", 3], ["created_at", "2016-11-05 13:26:12.427983"], ["updated_at", "2016-11-05 13:26:12.427983"]]
+  [1m[36m (105.0ms)[0m  [1mcommit transaction[0m
+Material - 3 / 4x4 has been added to project Donna's Patio
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mMaterial Load (0.0ms)[0m  SELECT  "materials".* FROM "materials" WHERE "materials"."name" = ?  ORDER BY "materials"."id" ASC LIMIT 1  [["name", "sand"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "materials" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "sand"], ["created_at", "2016-11-05 13:26:12.547980"], ["updated_at", "2016-11-05 13:26:12.547980"]]
+  [1m[36m (105.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mUPDATE "materials" SET "quantity" = ?, "unit" = ?, "updated_at" = ? WHERE "materials"."id" = ?[0m  [["quantity", 10], ["unit", "lbs"], ["updated_at", "2016-11-05 13:26:12.659923"], ["id", 4]]
+  [1m[35m (118.5ms)[0m  commit transaction
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["name", "Donna's Patio"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["project_id", 1], ["material_id", 4], ["created_at", "2016-11-05 13:26:12.789415"], ["updated_at", "2016-11-05 13:26:12.789415"]]
+  [1m[35m (149.0ms)[0m  commit transaction
+Material - 4 / sand has been added to project Donna's Patio
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT  "materials".* FROM "materials" WHERE "materials"."name" = ?  ORDER BY "materials"."id" ASC LIMIT 1[0m  [["name", "chairs"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (30.7ms)[0m  [1mINSERT INTO "materials" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "chairs"], ["created_at", "2016-11-05 13:26:12.946428"], ["updated_at", "2016-11-05 13:26:12.946428"]]
+  [1m[35m (124.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "materials" SET "quantity" = ?, "updated_at" = ? WHERE "materials"."id" = ?  [["quantity", 4], ["updated_at", "2016-11-05 13:26:13.104460"], ["id", 5]]
+  [1m[36m (107.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mProject Load (0.5ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1  [["name", "Donna's Patio"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["project_id", 1], ["material_id", 5], ["created_at", "2016-11-05 13:26:13.221866"], ["updated_at", "2016-11-05 13:26:13.221866"]]
+  [1m[36m (105.0ms)[0m  [1mcommit transaction[0m
+Material - 5 / chairs has been added to project Donna's Patio
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mMaterial Load (0.0ms)[0m  SELECT  "materials".* FROM "materials" WHERE "materials"."name" = ?  ORDER BY "materials"."id" ASC LIMIT 1  [["name", "table"]]
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "materials" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "table"], ["created_at", "2016-11-05 13:26:13.341834"], ["updated_at", "2016-11-05 13:26:13.341834"]]
+  [1m[36m (149.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mUPDATE "materials" SET "quantity" = ?, "updated_at" = ? WHERE "materials"."id" = ?[0m  [["quantity", 1], ["updated_at", "2016-11-05 13:26:13.503892"], ["id", 6]]
+  [1m[35m (128.9ms)[0m  commit transaction
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["name", "Donna's Patio"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["project_id", 1], ["material_id", 6], ["created_at", "2016-11-05 13:26:13.654351"], ["updated_at", "2016-11-05 13:26:13.654351"]]
+  [1m[35m (109.5ms)[0m  commit transaction
+Material - 6 / table has been added to project Donna's Patio
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT  "materials".* FROM "materials" WHERE "materials"."name" = ?  ORDER BY "materials"."id" ASC LIMIT 1[0m  [["name", "2x4"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "materials" SET "quantity" = ?, "updated_at" = ? WHERE "materials"."id" = ?[0m  [["quantity", 1000], ["updated_at", "2016-11-05 13:26:13.819373"], ["id", 2]]
+  [1m[35m (103.5ms)[0m  commit transaction
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["name", "Jake's House"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["project_id", 2], ["material_id", 2], ["created_at", "2016-11-05 13:26:13.929907"], ["updated_at", "2016-11-05 13:26:13.929907"]]
+  [1m[35m (117.3ms)[0m  commit transaction
+Material - 2 / 2x4 has been added to project Jake's House
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT  "materials".* FROM "materials" WHERE "materials"."name" = ?  ORDER BY "materials"."id" ASC LIMIT 1[0m  [["name", "8x4 plywood"]]
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "materials" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "8x4 plywood"], ["created_at", "2016-11-05 13:26:14.054164"], ["updated_at", "2016-11-05 13:26:14.054164"]]
+  [1m[35m (153.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  UPDATE "materials" SET "quantity" = ?, "updated_at" = ? WHERE "materials"."id" = ?  [["quantity", 500], ["updated_at", "2016-11-05 13:26:14.213307"], ["id", 7]]
+  [1m[36m (131.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1  [["name", "Jake's House"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["project_id", 2], ["material_id", 7], ["created_at", "2016-11-05 13:26:14.357127"], ["updated_at", "2016-11-05 13:26:14.357127"]]
+  [1m[36m (121.1ms)[0m  [1mcommit transaction[0m
+Material - 7 / 8x4 plywood has been added to project Jake's House
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mMaterial Load (0.0ms)[0m  SELECT  "materials".* FROM "materials" WHERE "materials"."name" = ?  ORDER BY "materials"."id" ASC LIMIT 1  [["name", "cement"]]
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "materials" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "cement"], ["created_at", "2016-11-05 13:26:14.487197"], ["updated_at", "2016-11-05 13:26:14.487197"]]
+  [1m[36m (108.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "materials" SET "quantity" = ?, "unit" = ?, "updated_at" = ? WHERE "materials"."id" = ?[0m  [["quantity", 150], ["unit", "lbs"], ["updated_at", "2016-11-05 13:26:14.600540"], ["id", 8]]
+  [1m[35m (120.4ms)[0m  commit transaction
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["name", "Jake's House"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["project_id", 2], ["material_id", 8], ["created_at", "2016-11-05 13:26:14.731469"], ["updated_at", "2016-11-05 13:26:14.731469"]]
+  [1m[35m (114.5ms)[0m  commit transaction
+Material - 8 / cement has been added to project Jake's House
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT  "materials".* FROM "materials" WHERE "materials"."name" = ?  ORDER BY "materials"."id" ASC LIMIT 1[0m  [["name", "nails"]]
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "materials" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "nails"], ["created_at", "2016-11-05 13:26:14.853996"], ["updated_at", "2016-11-05 13:26:14.853996"]]
+  [1m[35m (118.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "materials" SET "quantity" = ?, "updated_at" = ? WHERE "materials"."id" = ?  [["quantity", 30000], ["updated_at", "2016-11-05 13:26:14.974964"], ["id", 9]]
+  [1m[36m (115.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1  [["name", "Jake's House"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["project_id", 2], ["material_id", 9], ["created_at", "2016-11-05 13:26:15.102553"], ["updated_at", "2016-11-05 13:26:15.102553"]]
+  [1m[36m (98.6ms)[0m  [1mcommit transaction[0m
+Material - 9 / nails has been added to project Jake's House
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mMaterial Load (0.0ms)[0m  SELECT  "materials".* FROM "materials" WHERE "materials"."name" = ?  ORDER BY "materials"."id" ASC LIMIT 1  [["name", "shingles"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "materials" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "shingles"], ["created_at", "2016-11-05 13:26:15.211201"], ["updated_at", "2016-11-05 13:26:15.211201"]]
+  [1m[36m (106.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mUPDATE "materials" SET "quantity" = ?, "updated_at" = ? WHERE "materials"."id" = ?[0m  [["quantity", 1000], ["updated_at", "2016-11-05 13:26:15.321626"], ["id", 10]]
+  [1m[35m (130.4ms)[0m  commit transaction
+  [1m[36mProject Load (1.0ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["name", "Jake's House"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["project_id", 2], ["material_id", 10], ["created_at", "2016-11-05 13:26:15.477039"], ["updated_at", "2016-11-05 13:26:15.477039"]]
+  [1m[35m (156.2ms)[0m  commit transaction
+Material - 10 / shingles has been added to project Jake's House
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT  "materials".* FROM "materials" WHERE "materials"."name" = ?  ORDER BY "materials"."id" ASC LIMIT 1[0m  [["name", "2x4"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mUPDATE "materials" SET "quantity" = ?, "updated_at" = ? WHERE "materials"."id" = ?[0m  [["quantity", 5], ["updated_at", "2016-11-05 13:26:15.650220"], ["id", 2]]
+  [1m[35m (153.0ms)[0m  commit transaction
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["name", "Phils Moving Van"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["project_id", 3], ["material_id", 2], ["created_at", "2016-11-05 13:26:15.816246"], ["updated_at", "2016-11-05 13:26:15.816246"]]
+  [1m[35m (108.6ms)[0m  commit transaction
+Material - 2 / 2x4 has been added to project Phils Moving Van
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mMaterial Load (0.5ms)[0m  [1mSELECT  "materials".* FROM "materials" WHERE "materials"."name" = ?  ORDER BY "materials"."id" ASC LIMIT 1[0m  [["name", "wheels"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "materials" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "wheels"], ["created_at", "2016-11-05 13:26:15.968382"], ["updated_at", "2016-11-05 13:26:15.968382"]]
+  [1m[35m (113.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  UPDATE "materials" SET "quantity" = ?, "updated_at" = ? WHERE "materials"."id" = ?  [["quantity", 4], ["updated_at", "2016-11-05 13:26:16.087998"], ["id", 11]]
+  [1m[36m (110.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1  [["name", "Phils Moving Van"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["project_id", 3], ["material_id", 11], ["created_at", "2016-11-05 13:26:16.209770"], ["updated_at", "2016-11-05 13:26:16.209770"]]
+  [1m[36m (100.4ms)[0m  [1mcommit transaction[0m
+Material - 11 / wheels has been added to project Phils Moving Van
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mMaterial Load (0.0ms)[0m  SELECT  "materials".* FROM "materials" WHERE "materials"."name" = ?  ORDER BY "materials"."id" ASC LIMIT 1  [["name", "glass"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "materials" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "glass"], ["created_at", "2016-11-05 13:26:16.317210"], ["updated_at", "2016-11-05 13:26:16.317210"]]
+  [1m[36m (109.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "materials" SET "quantity" = ?, "unit" = ?, "updated_at" = ? WHERE "materials"."id" = ?[0m  [["quantity", 3], ["unit", "ft"], ["updated_at", "2016-11-05 13:26:16.430603"], ["id", 12]]
+  [1m[35m (126.2ms)[0m  commit transaction
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1[0m  [["name", "Phils Moving Van"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["project_id", 3], ["material_id", 12], ["created_at", "2016-11-05 13:26:16.565106"], ["updated_at", "2016-11-05 13:26:16.565106"]]
+  [1m[35m (102.0ms)[0m  commit transaction
+Material - 12 / glass has been added to project Phils Moving Van
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT  "materials".* FROM "materials" WHERE "materials"."name" = ?  ORDER BY "materials"."id" ASC LIMIT 1[0m  [["name", "carpet"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "materials" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "carpet"], ["created_at", "2016-11-05 13:26:16.680637"], ["updated_at", "2016-11-05 13:26:16.680637"]]
+  [1m[35m (120.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (25.0ms)[0m  UPDATE "materials" SET "quantity" = ?, "unit" = ?, "updated_at" = ? WHERE "materials"."id" = ?  [["quantity", 5], ["unit", "ft"], ["updated_at", "2016-11-05 13:26:16.820659"], ["id", 13]]
+  [1m[36m (179.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mProject Load (1.0ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."name" = ?  ORDER BY "projects"."id" ASC LIMIT 1  [["name", "Phils Moving Van"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["project_id", 3], ["material_id", 13], ["created_at", "2016-11-05 13:26:17.055714"], ["updated_at", "2016-11-05 13:26:17.055714"]]
+  [1m[36m (129.2ms)[0m  [1mcommit transaction[0m
+Material - 13 / carpet has been added to project Phils Moving Van
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/workers" for ::1 at 2016-11-05 09:28:16 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WorkersController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."name" ASC LIMIT 30 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?[0m  [["user_id", 9]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?  [["user_id", 12]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?[0m  [["user_id", 13]]
+  [1m[35m (4.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?  [["user_id", 16]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?  [["user_id", 15]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?[0m  [["user_id", 14]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?  [["user_id", 6]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?  [["user_id", 8]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?  [["user_id", 10]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?  [["user_id", 11]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?[0m  [["user_id", 3]]
+  Rendered workers/index.html.erb within layouts/application (313.1ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 1838ms (Views: 1751.9ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/projects" for ::1 at 2016-11-05 09:28:29 -0400
+Processing by ProjectsController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects"  ORDER BY "projects"."name" ASC LIMIT 30 OFFSET 0
+  [1m[36mMaterial Load (0.5ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 1]]
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 2]]
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 3]]
+  Rendered projects/index.html.erb within layouts/application (119.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 531ms (Views: 523.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/materials" for ::1 at 2016-11-05 09:28:34 -0400
+Processing by MaterialsController#index as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "materials"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "materials"
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT  "materials".* FROM "materials"  ORDER BY "materials"."name" ASC LIMIT 30 OFFSET 0[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 3]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 7]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 1]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 13]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 8]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 5]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 12]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 9]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 4]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 10]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 6]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 11]]
+  Rendered materials/index.html.erb within layouts/application (183.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 736ms (Views: 729.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-05 15:18:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 1126ms (Views: 1102.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui/theme.self-df1da30301997b52795cb0213bccd335f2897b65f84d1d7d7c63c04f048d902f.css?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.self-88243ff8ad84acfb1f761c5d9d83d302f8fd8816abbc3b1b8ac1afe64e6324dc.css?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/jquery-ui/core.self-23329dbe1961b938278306c019037fe36ff6ccb28193f1038e52ccbf52858163.css?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/jquery-ui/menu.self-5277268fc75b8d6e851ccb5ca12e162c7440315d70974f34db800bc70330f135.css?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-2d6dfccae4fba2fe27d00372b974d4540d75a00cea6ceaa0a6aa33852b9d3ac3.css?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/application.self-860170c7ab1ca088027e93d68592059edd583aacf6fd47eea1c1c5332b5a9db9.css?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/jquery-ui/menu.self-7abc1c9401509a7e4fc609b1e461be6fd17e8116e8fda19cc59d05ba79aefb68.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-3befc48aba87cead090cfd014562b2771a662ac6d2c8197b24c08b2d9f3d9f2d.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/autocomplete-rails.self-7b9f3d470095312074f7dba7e53e16482b6ac8c4c5fe8dd368f321fd8324245c.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-11-05 15:18:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-11-05 15:18:12 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-11-05 15:18:12 -0400
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-11-05 15:18:12 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-11-05 15:18:12 -0400
+
+
+Started GET "/assets/projects.self-c348650e05d54be56463acf225fdc6cc388d56e36bb8208a3c634b7379a43e34.js?body=1" for ::1 at 2016-11-05 15:18:12 -0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-11-05 15:18:12 -0400
+
+
+Started GET "/assets/application.self-3c6b003359d7b0079c7f31abd75966a993e67c4dbcfe9d73d8fa97d435db4b34.js?body=1" for ::1 at 2016-11-05 15:18:12 -0400
+
+
+Started GET "/favicon.ico" for ::1 at 2016-11-05 15:18:12 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (28.1ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (124.1ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (73.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (147.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-05 16:20:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (38.0ms)
+  Rendered layouts/_shim.html.erb (3.0ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6550ms (Views: 6444.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-05 16:20:59 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 930ms (Views: 929.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects" for ::1 at 2016-11-05 16:28:58 -0400
+Processing by ProjectsController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mProject Load (1.0ms)[0m  SELECT  "projects".* FROM "projects"  ORDER BY "projects"."name" ASC LIMIT 30 OFFSET 0
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 1]]
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 2]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 2]]
+  [1m[36mMaterial Load (3.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 3]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 3]]
+  Rendered projects/index.html.erb within layouts/application (802.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1665ms (Views: 1526.2ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/projects/new" for ::1 at 2016-11-05 16:31:53 -0400
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.erb (299.3ms)
+  Rendered projects/new.html.erb within layouts/application (327.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 820ms (Views: 817.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/projects" for ::1 at 2016-11-05 16:36:18 -0400
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y2OXIWnkjOg44mk7kgQBUk69AsQVu6HUCbqFUA5c2CBVqD9zLJxhTPippIVBPxKN5hVn+5r/21fovSNvpp2LQQ==", "project"=>{"name"=>"Test Project", "description"=>"Test project"}, "commit"=>"Create Project"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test Project"], ["description", "Test project"], ["created_at", "2016-11-05 20:36:18.497964"], ["updated_at", "2016-11-05 20:36:18.497964"]]
+  [1m[36m (104.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/projects
+Completed 302 Found in 120ms (ActiveRecord: 106.4ms)
+
+
+Started GET "/projects" for ::1 at 2016-11-05 16:36:18 -0400
+Processing by ProjectsController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects"  ORDER BY "projects"."name" ASC LIMIT 30 OFFSET 0
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 1]]
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 2]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 2]]
+  [1m[36mMaterial Load (0.5ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 3]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 3]]
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 4]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 4]]
+  Rendered projects/index.html.erb within layouts/application (63.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 622ms (Views: 616.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/projects/4" for ::1 at 2016-11-05 16:41:00 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mMaterial Load (0.0ms)[0m  SELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?  [["project_id", 4]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered projects/show.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 559ms (Views: 456.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100-39ab7ccd9f4e82579da78a9241265df288d8eb65dbbd7cf48aed2d0129887df5.png" for ::1 at 2016-11-05 16:41:14 -0400
+
+
+Started GET "/projects/autocomplete_material_name?term=pl" for ::1 at 2016-11-05 16:41:18 -0400
+Processing by ProjectsController#autocomplete_material_name as JSON
+  Parameters: {"term"=>"pl"}
+  [1m[35mMaterial Load (1.0ms)[0m  SELECT  "materials"."id" as id, "materials"."name" as name FROM "materials" WHERE (LOWER(name) LIKE '%pl%')  ORDER BY LOWER(name) ASC LIMIT 10
+Completed 200 OK in 4ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/projects/autocomplete_material_name?term=ply" for ::1 at 2016-11-05 16:41:18 -0400
+Processing by ProjectsController#autocomplete_material_name as JSON
+  Parameters: {"term"=>"ply"}
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT  "materials"."id" as id, "materials"."name" as name FROM "materials" WHERE (LOWER(name) LIKE '%ply%')  ORDER BY LOWER(name) ASC LIMIT 10[0m
+Completed 200 OK in 6ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery-ui/ui-bg_glass_75_dadada_1x400-c108f5cbf2dd9ec07a26530695ddd95e1664597ce6c056ae44c162cc2e28cec4.png" for ::1 at 2016-11-05 16:41:19 -0400
+
+
+Started POST "/projects/4/add_material" for ::1 at 2016-11-05 16:41:20 -0400
+Processing by ProjectsController#add_material as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c03MsQBYWn5147c+BcZ6/nQnchwHEQcj9i0pkgC2fiHthmTjRSC32rWoeoDW/Wkh3I8XI4hVfaAXKo+tqHctQA==", "material_name"=>"8x4 plywood", "material_id"=>"7", "id"=>"4"}
+  [1m[35mProject Load (3.0ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT  "materials".* FROM "materials" WHERE "materials"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "project_materials" WHERE "project_materials"."project_id" = ? AND "project_materials"."material_id" = ?  [["project_id", 4], ["material_id", 7]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["project_id", 4], ["material_id", 7], ["created_at", "2016-11-05 20:41:20.668497"], ["updated_at", "2016-11-05 20:41:20.668497"]]
+  [1m[36m (133.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/projects/4
+Completed 302 Found in 294ms (ActiveRecord: 140.9ms)
+
+
+Started GET "/projects/4" for ::1 at 2016-11-05 16:41:20 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 4]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 4]]
+  Rendered projects/show.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 553ms (Views: 550.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/projects/autocomplete_material_name?term=2x" for ::1 at 2016-11-05 16:41:27 -0400
+Processing by ProjectsController#autocomplete_material_name as JSON
+  Parameters: {"term"=>"2x"}
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT  "materials"."id" as id, "materials"."name" as name FROM "materials" WHERE (LOWER(name) LIKE '%2x%')  ORDER BY LOWER(name) ASC LIMIT 10[0m
+Completed 200 OK in 7ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/projects/4/add_material" for ::1 at 2016-11-05 16:41:30 -0400
+Processing by ProjectsController#add_material as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9XVbe6PRhxNdtUeeuGHPBkWF/GOhs1KnlhnT0b62f8prvvMp5qlqt53+iiBrWtzZ7S2ZXC73KCR3HnXuFncsqw==", "material_name"=>"2x4", "material_id"=>"2", "id"=>"4"}
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT  "materials".* FROM "materials" WHERE "materials"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "project_materials" WHERE "project_materials"."project_id" = ? AND "project_materials"."material_id" = ?  [["project_id", 4], ["material_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "project_materials" ("project_id", "material_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["project_id", 4], ["material_id", 2], ["created_at", "2016-11-05 20:41:30.463591"], ["updated_at", "2016-11-05 20:41:30.463591"]]
+  [1m[36m (94.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/projects/4
+Completed 302 Found in 126ms (ActiveRecord: 96.9ms)
+
+
+Started GET "/projects/4" for ::1 at 2016-11-05 16:41:30 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProject Load (1.0ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 4]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 4]]
+  Rendered projects/show.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 633ms (Views: 630.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/projects/autocomplete_user_name?term=Wo" for ::1 at 2016-11-05 16:41:37 -0400
+Processing by ProjectsController#autocomplete_user_name as JSON
+  Parameters: {"term"=>"Wo"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users"."id" as id, "users"."name" as name FROM "users" WHERE (LOWER(name) LIKE '%wo%')  ORDER BY LOWER(name) ASC LIMIT 10[0m
+Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/autocomplete_user_name?term=Wor" for ::1 at 2016-11-05 16:41:37 -0400
+Processing by ProjectsController#autocomplete_user_name as JSON
+  Parameters: {"term"=>"Wor"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users"."id" as id, "users"."name" as name FROM "users" WHERE (LOWER(name) LIKE '%wor%')  ORDER BY LOWER(name) ASC LIMIT 10
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/autocomplete_user_name?term=Work" for ::1 at 2016-11-05 16:41:38 -0400
+Processing by ProjectsController#autocomplete_user_name as JSON
+  Parameters: {"term"=>"Work"}
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT  "users"."id" as id, "users"."name" as name FROM "users" WHERE (LOWER(name) LIKE '%work%')  ORDER BY LOWER(name) ASC LIMIT 10[0m
+Completed 200 OK in 7ms (Views: 1.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/projects/autocomplete_user_name?term=Worke" for ::1 at 2016-11-05 16:41:38 -0400
+Processing by ProjectsController#autocomplete_user_name as JSON
+  Parameters: {"term"=>"Worke"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users"."id" as id, "users"."name" as name FROM "users" WHERE (LOWER(name) LIKE '%worke%')  ORDER BY LOWER(name) ASC LIMIT 10
+Completed 200 OK in 16ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/projects/autocomplete_user_name?term=Worker" for ::1 at 2016-11-05 16:41:38 -0400
+Processing by ProjectsController#autocomplete_user_name as JSON
+  Parameters: {"term"=>"Worker"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users"."id" as id, "users"."name" as name FROM "users" WHERE (LOWER(name) LIKE '%worker%')  ORDER BY LOWER(name) ASC LIMIT 10[0m
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/projects/autocomplete_user_name?term=Worke" for ::1 at 2016-11-05 16:41:38 -0400
+Processing by ProjectsController#autocomplete_user_name as JSON
+  Parameters: {"term"=>"Worke"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users"."id" as id, "users"."name" as name FROM "users" WHERE (LOWER(name) LIKE '%worke%')  ORDER BY LOWER(name) ASC LIMIT 10
+Completed 200 OK in 9ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/autocomplete_user_name?term=Work" for ::1 at 2016-11-05 16:41:39 -0400
+Processing by ProjectsController#autocomplete_user_name as JSON
+  Parameters: {"term"=>"Work"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users"."id" as id, "users"."name" as name FROM "users" WHERE (LOWER(name) LIKE '%work%')  ORDER BY LOWER(name) ASC LIMIT 10[0m
+Completed 200 OK in 8ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/autocomplete_user_name?term=Wor" for ::1 at 2016-11-05 16:41:39 -0400
+Processing by ProjectsController#autocomplete_user_name as JSON
+  Parameters: {"term"=>"Wor"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users"."id" as id, "users"."name" as name FROM "users" WHERE (LOWER(name) LIKE '%wor%')  ORDER BY LOWER(name) ASC LIMIT 10
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/autocomplete_user_name?term=Wo" for ::1 at 2016-11-05 16:41:39 -0400
+Processing by ProjectsController#autocomplete_user_name as JSON
+  Parameters: {"term"=>"Wo"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users"."id" as id, "users"."name" as name FROM "users" WHERE (LOWER(name) LIKE '%wo%')  ORDER BY LOWER(name) ASC LIMIT 10[0m
+Completed 200 OK in 27ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/autocomplete_user_name?term=te" for ::1 at 2016-11-05 16:41:40 -0400
+Processing by ProjectsController#autocomplete_user_name as JSON
+  Parameters: {"term"=>"te"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users"."id" as id, "users"."name" as name FROM "users" WHERE (LOWER(name) LIKE '%te%')  ORDER BY LOWER(name) ASC LIMIT 10
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/autocomplete_user_name?term=tes" for ::1 at 2016-11-05 16:41:40 -0400
+Processing by ProjectsController#autocomplete_user_name as JSON
+  Parameters: {"term"=>"tes"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users"."id" as id, "users"."name" as name FROM "users" WHERE (LOWER(name) LIKE '%tes%')  ORDER BY LOWER(name) ASC LIMIT 10[0m
+Completed 200 OK in 11ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/autocomplete_user_name?term=test" for ::1 at 2016-11-05 16:41:40 -0400
+Processing by ProjectsController#autocomplete_user_name as JSON
+  Parameters: {"term"=>"test"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users"."id" as id, "users"."name" as name FROM "users" WHERE (LOWER(name) LIKE '%test%')  ORDER BY LOWER(name) ASC LIMIT 10
+Completed 200 OK in 4ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/projects/4/add_worker" for ::1 at 2016-11-05 16:41:43 -0400
+Processing by ProjectsController#add_worker as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2XZtRgxFgfAIi/YgGdL250753HubTKiSuaV15Rt8QWhHvcUUST1sVMjAO57K6eU45lG5RBQI0hFYotPas70SCQ==", "worker_name"=>"test", "worker_id"=>"3", "id"=>"4"}
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "project_employees" WHERE "project_employees"."project_id" = ? AND "project_employees"."user_id" = ?[0m  [["project_id", 4], ["user_id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "project_employees" ("project_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["project_id", 4], ["user_id", 3], ["created_at", "2016-11-05 20:41:43.499562"], ["updated_at", "2016-11-05 20:41:43.499562"]]
+  [1m[35m (167.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/projects/4
+Completed 302 Found in 261ms (ActiveRecord: 170.1ms)
+
+
+Started GET "/projects/4" for ::1 at 2016-11-05 16:41:43 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.0ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mMaterial Load (0.0ms)[0m  SELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?  [["project_id", 4]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered projects/show.html.erb within layouts/application (44.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 697ms (Views: 690.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-05 16:44:52 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (10.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 778ms (Views: 776.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects" for ::1 at 2016-11-05 16:44:54 -0400
+Processing by ProjectsController#index as HTML
+  [1m[35m (3.0ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects"  ORDER BY "projects"."name" ASC LIMIT 30 OFFSET 0
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 1]]
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 2]]
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 3]]
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 4]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 4]]
+  Rendered projects/index.html.erb within layouts/application (155.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (15.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1066ms (Views: 1056.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/materials" for ::1 at 2016-11-05 16:44:56 -0400
+Processing by MaterialsController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "materials"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "materials"
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT  "materials".* FROM "materials"  ORDER BY "materials"."name" ASC LIMIT 30 OFFSET 0[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 2]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 3]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 7]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 1]]
+  [1m[35m (6.5ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 13]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 8]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 5]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 12]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 9]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 4]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 10]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 6]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 11]]
+  Rendered materials/index.html.erb within layouts/application (167.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1188ms (Views: 1171.2ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/materials/new" for ::1 at 2016-11-05 16:55:06 -0400
+Processing by MaterialsController#new as HTML
+  Rendered materials/_form.html.erb (65.5ms)
+  Rendered materials/new.html.erb within layouts/application (285.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 956ms (Views: 954.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-05 22:14:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (25.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2855ms (Views: 2809.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-05 22:14:47 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 368ms (Views: 368.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2016-11-05 22:14:48 -0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (82.8ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (363.7ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (239.4ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (421.4ms)
+
+
+Started GET "/workers" for ::1 at 2016-11-05 22:14:53 -0400
+Processing by WorkersController#index as HTML
+  [1m[35m (34.0ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."name" ASC LIMIT 30 OFFSET 0
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?[0m  [["user_id", 9]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?  [["user_id", 12]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?[0m  [["user_id", 13]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?  [["user_id", 16]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?  [["user_id", 15]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?[0m  [["user_id", 14]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?  [["user_id", 6]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?  [["user_id", 8]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?  [["user_id", 10]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?  [["user_id", 11]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_employees" ON "projects"."id" = "project_employees"."project_id" WHERE "project_employees"."user_id" = ?[0m  [["user_id", 3]]
+  Rendered workers/index.html.erb within layouts/application (429.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1010ms (Views: 856.2ms | ActiveRecord: 41.5ms)
+
+
+Started GET "/workers/new" for ::1 at 2016-11-05 22:20:57 -0400
+Processing by WorkersController#new as HTML
+  Rendered workers/_form.html.erb (101.0ms)
+  Rendered workers/new.html.erb within layouts/application (229.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 638ms (Views: 634.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects" for ::1 at 2016-11-05 22:23:27 -0400
+Processing by ProjectsController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mProject Load (0.0ms)[0m  SELECT  "projects".* FROM "projects"  ORDER BY "projects"."name" ASC LIMIT 30 OFFSET 0
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 1]]
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 2]]
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 3]]
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 4]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 4]]
+  Rendered projects/index.html.erb within layouts/application (131.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 547ms (Views: 547.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-05 22:49:52 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (14.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1005ms (Views: 1003.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-05 23:16:06 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 610ms (Views: 602.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-06 20:39:35 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (9.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1118ms (Views: 1110.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects" for ::1 at 2016-11-06 20:39:36 -0500
+Processing by ProjectsController#index as HTML
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mProject Load (1.0ms)[0m  [1mSELECT  "projects".* FROM "projects"  ORDER BY "projects"."name" ASC LIMIT 30 OFFSET 0[0m
+  [1m[35mMaterial Load (0.5ms)[0m  SELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?  [["project_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[35mMaterial Load (0.5ms)[0m  SELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?  [["project_id", 2]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?[0m  [["project_id", 2]]
+  [1m[35mMaterial Load (0.0ms)[0m  SELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?  [["project_id", 3]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?[0m  [["project_id", 3]]
+  [1m[35mMaterial Load (1.5ms)[0m  SELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?  [["project_id", 4]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?[0m  [["project_id", 4]]
+  Rendered projects/index.html.erb within layouts/application (46.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 504ms (Views: 493.1ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-06 22:44:07 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (28.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1380ms (Views: 1372.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-06 23:03:47 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 413ms (Views: 412.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-06 23:03:47 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 424ms (Views: 423.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-06 23:03:50 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 374ms (Views: 373.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects" for ::1 at 2016-11-06 23:03:51 -0500
+Processing by ProjectsController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "projects"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35mProject Load (1.0ms)[0m  SELECT  "projects".* FROM "projects"  ORDER BY "projects"."name" ASC LIMIT 30 OFFSET 0
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 1]]
+  [1m[36mMaterial Load (1.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 2]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 2]]
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 3]]
+  [1m[36mMaterial Load (0.0ms)[0m  [1mSELECT "materials".* FROM "materials" INNER JOIN "project_materials" ON "materials"."id" = "project_materials"."material_id" WHERE "project_materials"."project_id" = ?[0m  [["project_id", 4]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "project_employees" ON "users"."id" = "project_employees"."user_id" WHERE "project_employees"."project_id" = ?  [["project_id", 4]]
+  Rendered projects/index.html.erb within layouts/application (35.5ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 465ms (Views: 457.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-06 23:03:53 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 392ms (Views: 391.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-06 23:05:49 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 3435ms (Views: 3370.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-06 23:05:55 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 427ms (Views: 426.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2016-11-06 23:05:56 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (96.1ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (394.7ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (193.7ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (377.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-07 20:44:46 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (37.2ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4343ms (Views: 4292.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2016-11-07 20:44:54 -0500
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (149.7ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (532.1ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (289.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (527.9ms)
+
+
+Started GET "/materials" for ::1 at 2016-11-07 20:45:17 -0500
+Processing by MaterialsController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "materials"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "materials"[0m
+  [1m[35mMaterial Load (18.3ms)[0m  SELECT  "materials".* FROM "materials"  ORDER BY "materials"."name" ASC LIMIT 30 OFFSET 0
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 2]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 7]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 1]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 13]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 8]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 5]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 12]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 9]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 4]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 10]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?  [["material_id", 6]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "projects" INNER JOIN "project_materials" ON "projects"."id" = "project_materials"."project_id" WHERE "project_materials"."material_id" = ?[0m  [["material_id", 11]]
+  Rendered materials/index.html.erb within layouts/application (513.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1021ms (Views: 921.5ms | ActiveRecord: 24.3ms)

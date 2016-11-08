@@ -1,0 +1,26 @@
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <span><%= image_tag 'image.gif', :size => '84x51', :style => 'margin-top: -15px;' %></span>
+        &nbsp;CONSTRUCTION MANAGEMENT SYSTEM
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'Home',      '/' %></li>
+        <li><%= link_to 'Projects',  projects_path %></li>
+        <li><%= link_to 'Materials', materials_path %></li>
+        <li><%= link_to 'Workers',   workers_path %></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+

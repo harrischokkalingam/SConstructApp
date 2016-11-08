@@ -1,0 +1,40 @@
+<%= form_for @material, :html => {:class => 'form-horizontal'} do |f| %>
+	<legend>
+		<% if @material.id.present? %>
+			Edit Material
+		<% else %>
+			New Material
+		<% end %>
+	</legend>
+	<div class='form-group'>
+		<%= f.label :name, :class => 'col-sm-2 control-label'  %>
+		<div class='col-sm-8'>
+			<%= f.text_field :name, :required => true, :class => 'form-control' %>
+		</div>
+	</div>		
+	<div class='form-group'>
+		<div class='col-sm-4 col-sm-offset-2'>
+			<%= f.label :quantity, :class => 'control-label'  %>
+			<%= f.number_field :quantity, :min => '0', :class => 'form-control' %>
+		</div>
+		<div class='col-sm-4'>
+			<%= f.label :unit, :class => 'control-label'  %>
+			<%= f.text_field :unit, :class => 'form-control' %>
+		</div>
+	</div>	
+	<div class='form-group'>
+		<%= f.label :dimensions, :class => 'col-sm-2 control-label'  %>
+		<div class='col-sm-8'>
+			<%= f.text_field :dimensions, :class => 'form-control' %>
+		</div>
+	</div>	
+	<div class='form-group'>
+		<%= f.label :description, :class => 'col-sm-2 control-label'  %>
+		<div class='col-sm-8'>
+			<%= f.text_area :description, :class => 'form-control' %>
+		</div>
+	</div>	
+	<div class='form-group text-center'>
+		<%= f.submit :class => 'btn btn-primary' %>
+	</div>
+<% end %>

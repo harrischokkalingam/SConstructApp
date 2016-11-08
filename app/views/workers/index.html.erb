@@ -1,0 +1,33 @@
+<div class='page-header'>
+	<h3>All Workers - <%= @users.size %>&nbsp;&nbsp;<%= link_to 'New', new_worker_path, :class => 'btn btn-default' %></h3>
+</div>
+
+<%= will_paginate @users %>
+<br />
+<table class='table table-striped'>
+	<thead>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Role</th>
+		<th>Expertise Level</th>
+		<th>No. of projects assigned to</th>
+		<th></th>
+	</thead>
+	<tbody>
+		<% @users.each do |user| %>
+			<tr>
+				<td><%= link_to user.name, worker_path(user) %></td>
+				<td><%= user.email  %></td>
+				<td><%= user.role || '<span class="text-danger">Not specified</span>'.html_safe  %></td>
+				<td><%= user.expertise_level || '<span class="text-danger">Not specified</span>'.html_safe  %></td>
+				<td><%= user.projects.size  %></td>
+				<td>
+					<%= link_to 'Edit', edit_worker_path(user), :class => 'btn btn-xs btn-default' %>
+					<%= link_to 'Delete', worker_path(user), :'data-method' => 'delete', :class => 'btn btn-xs btn-danger' %>
+				</td>
+			</tr>		
+		<% end %>
+	</tbody>
+</table>
+<br />
+<%= will_paginate @users %>

@@ -1,0 +1,33 @@
+<div class='page-header'>
+	<h3>Materials Inventory - <%= @materials.size %>&nbsp;&nbsp;<%= link_to 'New', new_material_path, :class => 'btn btn-default' %></h3>
+</div>
+
+<%= will_paginate %>
+<br />
+<table class='table table-striped'>
+	<thead>
+		<th>Name</th>
+		<th>Quantity in stock</th>
+		<th>Unit</th>
+		<th>Dimensions</th>
+		<th>No. of projects with requirement</th>
+		<th></th>
+	</thead>
+	<tbody>
+		<% @materials.each do |material| %>
+			<tr>
+				<td><%= link_to material.name, material_path(material) %></td>
+				<td><%= material.quantity || 0  %></td>
+				<td><%= ((material.unit.present?       and material.unit.size > 0) ?       material.unit       : 'unit')  %></td>
+				<td><%= ((material.dimensions.present? and material.dimensions.size > 0) ? material.dimensions : 'Not specified')  %></td>
+				<td><%= material.projects.size  %></td>
+				<td>
+					<%= link_to 'Edit', edit_material_path(material), :class => 'btn btn-xs btn-default' %>
+					<%= link_to 'Delete', material_path(material), :'data-method' => 'delete', :class => 'btn btn-xs btn-danger' %>
+				</td>
+			</tr>		
+		<% end %>
+	</tbody>
+</table>
+<br />
+<%= will_paginate %>

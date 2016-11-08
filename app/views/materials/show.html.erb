@@ -1,0 +1,27 @@
+<div class='page-header'>
+	<h3>Material details for - <strong><%= @material.name %></strong>&nbsp;&nbsp;<%= link_to 'Edit', edit_material_path(@material), :class => 'btn btn-default' %>&nbsp;<%= link_to 'Delete', material_path(@material), :'data-method' => 'delete', :class => 'btn btn-danger' %></h3>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<%= @material.description || 'No description specified' %>
+	</div>
+</div>
+<div class='well well-lg'>
+	<div class='page-header'>
+		<h4>Projects with requirements - <%= @material.projects.size %></h4>
+	</div>
+	<table class='table'>
+		<thead>
+			<th>Name</th>
+			<th>Description</th>
+		</thead>
+		<tbody>
+			<% @material.projects.each do |project| %>
+				<tr>
+					<td><%= link_to project.name, project_path(project) %></td>
+					<td><%= project.description %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

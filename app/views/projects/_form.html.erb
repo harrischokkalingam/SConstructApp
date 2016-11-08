@@ -1,0 +1,24 @@
+<%= form_for @project, :html => {:class => 'form-horizontal'} do |f| %>
+	<legend>
+		<% if @project.id.present? %>
+			Edit Project
+		<% else %>
+			New Project
+		<% end %>
+	</legend>
+	<div class='form-group'>
+		<%= f.label :name, :class => 'col-sm-2 control-label'  %>
+		<div class='col-sm-8'>
+			<%= f.text_field :name, :required => true, :class => 'form-control' %>
+		</div>
+	</div>		
+	<div class='form-group'>
+		<%= f.label :description, :class => 'col-sm-2 control-label'  %>
+		<div class='col-sm-8'>
+			<%= f.text_area :description, :class => 'form-control' %>
+		</div>
+	</div>	
+	<div class='form-group text-center'>
+		<%= f.submit :class => 'btn btn-primary' %>
+	</div>
+<% end %>

@@ -1,0 +1,29 @@
+<div class='page-header'>
+	<h3>All Projects - <%= @projects.size %>&nbsp;&nbsp;<%= link_to 'New', new_project_path, :class => 'btn btn-default' %></h3>
+</div>
+
+<%= will_paginate %>
+<br />
+<table class='table table-striped'>
+	<thead>
+		<th>Name</th>
+		<th>No. of materials</th>
+		<th>No. of employees</th>
+		<th></th>
+	</thead>
+	<tbody>
+		<% @projects.each do |project| %>
+			<tr>
+				<td><%= link_to project.name, project_path(project) %></td>
+				<td><%= project.materials.distinct.size  %></td>
+				<td><%= project.employees.distinct.size  %></td>
+				<td>
+					<%= link_to 'Edit', edit_project_path(project), :class => 'btn btn-xs btn-default' %>
+					<%= link_to 'Delete', project_path(project), :'data-method' => 'delete', :class => 'btn btn-xs btn-danger' %>
+				</td>
+			</tr>		
+		<% end %>
+	</tbody>
+</table>
+<br />
+<%= will_paginate %>

@@ -1,0 +1,80 @@
+<div class='page-header'>
+	<h3>Project details for - <strong><%= @project.name %></strong>&nbsp;&nbsp;<%= link_to 'Edit', edit_project_path(@project), :class => 'btn btn-default' %>&nbsp;<%= link_to 'Delete', project_path(@project), :'data-method' => 'delete', :class => 'btn btn-danger' %></h3>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<%= @project.description || 'No description specified' %>
+	</div>
+</div>
+<div class='well well-lg'>
+	<div class='page-header'>
+		<h4>Materials needed - <%= @project.materials.distinct.size %></h4>
+		<div class='row'>
+			<div class='col-sm-6 col-sm-offset-6'>
+				<%= form_tag add_material_project_path(@project), method: 'POST' do %>
+					<div class='input-group'>
+						<%= autocomplete_field_tag 'material_name', '', autocomplete_material_name_projects_path, :size => 15, :class => 'form-control', :placeholder => 'Search and add material' %>
+						<span class='input-group-btn'>
+							<button type='submit' class='btn btn-default'>Add</button>
+						</span>
+					</div>
+					<%= hidden_field_tag 'material_id' %>
+				<% end %>
+			</div>
+		</div>
+	</div>
+	<table class='table'>
+		<thead>
+			<th>Name</th>
+			<th>Quantity in Inventory</th>
+			<th></th>
+		</thead>
+		<tbody>
+			<% @project.materials.distinct.each do |material| %>
+				<tr>
+					<td><%= link_to material.name, material_path(material) %></td>
+					<td><%= "#{material.quantity} #{material_unit_quantized material}" %></td>
+					<td><%= form_tag remove_material_project_path(@project), method: 'POST', style: 'display:inline;' do %><button type='submit' class='btn btn-danger btn-xs'>Remove from project</button><%= hidden_field_tag 'material_id', material.id %><% end %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>
+<div class='well well-lg'>
+	<div class='page-header'>
+		<h4>Workers assigned - <%= @project.employees.distinct.size %></h4>
+		<div class='row'>
+			<div class='col-sm-6 col-sm-offset-6'>
+				<%= form_tag add_worker_project_path(@project), method: 'POST' do %>
+					<div class='input-group'>
+						<%= autocomplete_field_tag 'worker_name', '', autocomplete_user_name_projects_path, :size => 15, :class => 'form-control', :placeholder => 'Search and add worker' %>
+						<span class='input-group-btn'>
+							<button type='submit' class='btn btn-default'>Add</button>
+						</span>
+					</div>
+					<%= hidden_field_tag 'worker_id' %>
+				<% end %>
+			</div>
+		</div>
+	</div>
+	<table class='table'>
+		<thead>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Role</th>
+			<th>Expertise</th>
+			<th></th>
+		</thead>
+		<tbody>
+			<% @project.employees.distinct.each do |employee| %>
+				<tr>
+					<td><%= link_to employee.name, worker_path(:id => employee.id) %></td>
+					<td><%= employee.email %></td>
+					<td><%= employee.role || '<span class="text-danger">Not specified</span>'.html_safe %></td>
+					<td><%= employee.expertise_level || '<span class="text-danger">Not specified</span>'.html_safe %></td>
+					<td><%= form_tag remove_worker_project_path(@project), method: 'POST', style: 'display:inline;' do %><button type='submit' class='btn btn-danger btn-xs'>Remove from project</button><%= hidden_field_tag 'worker_id', employee.id %><% end %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

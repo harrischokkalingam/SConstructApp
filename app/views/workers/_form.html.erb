@@ -1,0 +1,36 @@
+<%= form_for @user, :url => (@user.id.present? ? worker_path(@user) : '/workers/'), :html => {:class => 'form-horizontal'} do |f| %>
+	<legend>
+		<% if @user.id.present? %>
+			Edit Worker
+		<% else %>
+			New Worker
+		<% end %>
+	</legend>
+	<div class='form-group'>
+		<%= f.label :name, :class => 'col-sm-2 control-label'  %>
+		<div class='col-sm-8'>
+			<%= f.text_field :name, :required => true, :class => 'form-control' %>
+		</div>
+	</div>	
+	<div class='form-group'>
+		<%= f.label :email, :class => 'col-sm-2 control-label'  %>
+		<div class='col-sm-8'>
+			<%= f.email_field :email, :required => true, :class => 'form-control' %>
+		</div>
+	</div>		
+	<div class='form-group'>
+		<%= f.label :role, :class => 'col-sm-2 control-label'  %>
+		<div class='col-sm-8'>
+			<%= f.text_field :role, :required => true, :class => 'form-control' %>
+		</div>
+	</div>	
+	<div class='form-group'>
+		<%= f.label :expertise_level, :class => 'col-sm-2 control-label'  %>
+		<div class='col-sm-8'>
+			<%= f.select :expertise_level, [['Beginner', 'Beginner'], ['Intermediate', 'Intermediate'], ['Expert', 'Expert']], {}, :class => 'form-control' %>
+		</div>
+	</div>	
+	<div class='form-group text-center'>
+		<%= f.submit :class => 'btn btn-primary' %>
+	</div>
+<% end %>
