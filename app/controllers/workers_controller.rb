@@ -19,9 +19,14 @@ class WorkersController < ApplicationController
   end
 
   def update    
-    @user.update_attributes user_params
-    flash[:success] = 'User updated successfully'
-    redirect_to workers_path
+    if User.where(:email => user_params[:email]).size > 0
+      flash.now[:danger] = "Email '#{user_params[:email]}' is already associated with a worker"
+      render 'edit'
+    else  
+      @user.update_attributes user_params
+      flash[:success] = 'User updated successfully'
+      redirect_to workers_path    
+    end
   end
 
   def destroy
